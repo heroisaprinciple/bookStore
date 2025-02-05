@@ -1,8 +1,18 @@
-.header {
+/* Header is styled here: */
+header {
   display: flex;
-  justify-content: flex-start;
-  align-items: baseline;
-  gap: 30px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5vh 5vw;
+  border-bottom: 0.2vh solid black;
+  background: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header h1 {
+  font-size: 2rem;
 }
 
 .manrope {
@@ -10,4 +20,160 @@
   font-optical-sizing: auto;
   font-weight: 200;
   font-style: normal;
+  font-size: 1.2rem;
 }
+
+.searchbar {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 50vw;
+  border-radius: 2rem;
+  padding: 0.5vh 1vw;
+  border: 0.2vh solid #ccc;
+}
+
+/* Search input field */
+.searchbar input {
+  width: 100%;
+  padding: 1vh;
+  border: none;
+  background: transparent;
+  font-size: 1rem;
+  outline: none;
+}
+
+/* Basket styling */
+.basket {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.basket img {
+  width: 2.5rem;
+  cursor: pointer;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1vh 5vw;
+  border-top: 0.1vh solid;
+  position: relative;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  margin: 0 2vw; /* Leads to equal spacing */
+}
+
+/* The thing that I've noticed so far:
+  if we call .offers-section directly and set a color 'red', then
+  the text would still be black as .navbar a has a higher precedence
+  that just class)
+*/
+
+.navbar a.offers-section {
+  color: red;
+}
+
+.navbar-links {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+
+/* A parallax effect is added here: */
+.team {
+  width: 100%;
+  height: 60vh;
+  background-image: url('src/imgs/main-page-imgs/team/team1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* Animation of flipping the letters is added here */
+.waviy {
+  position: relative;
+}
+
+.waviy span {
+  position: relative;
+  display: inline-block;
+  font-size: 30px;
+  color: black;
+  text-transform: uppercase;
+  animation: flip 2s infinite;
+  animation-delay: calc(.2s * var(--i))
+}
+@keyframes flip {
+  0%,80% {
+    transform: rotateY(360deg);
+  }
+}
+
+.all-ages-section {
+  text-align: center;
+  padding: 4vh 5vw;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1vh;
+}
+
+.see-more {
+  text-decoration: none;
+  color: dimgrey;
+  font-size: 1.2rem;
+  display: block;
+  margin-bottom: 3vh;
+}
+
+.categories-ages-container {
+  display: flex;
+  justify-content: center;
+  gap: 3vw;
+  flex-wrap: wrap;
+}
+
+.category-ages-item {
+  width: 18%;
+  min-width: 200px;
+  background: #f8f8f8;
+  padding: 2vh 1vw;
+  border-radius: 1rem;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.category-ages-item img {
+  width: 100%;
+  border-radius: 0.5rem;
+  object-fit: cover;
+  height: 500px;
+}
+
+.category-ages-item h3 {
+  font-size: 1.5rem;
+  margin: 1vh 0;
+}
+
+.category-ages-item p {
+  font-size: 1rem;
+  color: gray;
+}
+
+

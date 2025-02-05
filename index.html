@@ -9,13 +9,89 @@
       <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     </head>
     <body>
-      <header class="header">
+    <!-- Header code is here: a logo, a searchbar, a basket icon -->
+      <header>
         <div class="logo">
           <h1 class="manrope">bookworm</h1>
         </div>
         <div class="searchbar">
-          <input type="text" placeholder="Search..">
+          <input type="text" placeholder="Search for books...">
+        </div>
+        <div class="basket">
+          <img src="src/imgs/shopping-basket.png" alt="Basket">
         </div>
       </header>
+
+    <!-- A navigation bar with book offers, categories, popular, loyalty cards, events  -->
+    <!-- TODO: add links -->
+    <nav class="navbar manrope">
+      <div class="navbar-links">
+        <a href="#">Categories</a>
+        <a href="#" class="offers-section">Offers</a>
+        <a href="#">Popular</a>
+        <a href="#">Loyalty Cards</a>
+        <a href="#">Events</a>
+        <a href="#">FAQ</a>
+      </div>
+    </nav>
+
+    <!-- TODO: use <main> instead of sections -->
+    <section class="main-info">
+      <div class="name">
+        <div class="waviy">
+          <span style="--i:1">M</span>
+          <span style="--i:2">e</span>
+          <span style="--i:3">e</span>
+          <span style="--i:4">t</span>
+          <br>
+          <span style="--i:5">O</span>
+          <span style="--i:6">u</span>
+          <span style="--i:7">r</span>
+          <br>
+          <span style="--i:8">T</span>
+          <span style="--i:9">e</span>
+          <span style="--i:10">a</span>
+          <span style="--i:11">m</span>
+        </div>
+      </div>
+
+      <div class="team">
+      </div>
+
+    </section>
+
+    <!-- A section with all ages classics -->
+    <section class="all-ages-section manrope">
+      <h2 class="section-title">FOR ALL AGES</h2>
+      <a href="#" class="see-more">See more</a>
+
+      <div class="categories-ages-container">
+        <div class="category-ages-item">
+          <img src="src/imgs/main-page-imgs/books/children-book-category.jpg" alt="Kids Books">
+          <h3>Kids</h3>
+          <p>Stories that inspire the youngest minds.</p>
+        </div>
+
+        <div class="category-ages-item">
+          <img src="src/imgs/main-page-imgs/books/teen-book-category.jpg" alt="Teens Books">
+          <h3>Teens</h3>
+          <p>Adventures and knowledge for growing readers.</p>
+        </div>
+
+        <div class="category-ages-item">
+          <img src="src/imgs/main-page-imgs/books/adult-book-category.jpg" alt="Adults Books">
+          <h3>Adults</h3>
+          <p>Timeless classics and modern masterpieces.</p>
+        </div>
+
+        <div class="category-ages-item">
+          <img src="src/imgs/main-page-imgs/books/elders-book-category.jpg" alt="Seniors Books">
+          <h3>Seniors</h3>
+          <p>Books that bring wisdom and nostalgia.</p>
+        </div>
+      </div>
+    </section>
+
+
     </body>
   </html>
