@@ -131,6 +131,53 @@ header h1 {
   margin: 20px;
 }
 
+.cookie-regular {
+  font-family: "Cookie", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.aim {
+  background: #e5e5e5;
+  text-align: center;
+  padding: 30px 15vw;
+  border-radius: 10px;
+  font-size: 3rem;
+  font-weight: 500;
+  color: #333;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 80%;
+  margin: 30px auto;
+  line-height: 1.6;
+
+  /* Animation */
+  opacity: 0; /* Initially hidden */
+  transform: translateY(20px); /* Starts slightly below */
+  animation: fadeInSlide 1.5s ease-out forwards;
+}
+
+/* Smooth Fade-In + Slide-Up Effect */
+@keyframes fadeInSlide {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* A Slight Text Pulse Effect */
+.aim p {
+  animation: textPulse 5s infinite ease-in-out;
+}
+
+@keyframes textPulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.02); }
+}
+
 .book-section {
   text-align: center;
   padding: 4vh 5vw;
@@ -184,6 +231,35 @@ header h1 {
   color: gray;
 }
 
+.add-to-basket {
+  background-color: white;
+  color: blue;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out, transform 0.2s;
+  width: 80%;
+  margin: 10px auto;
+  display: block;
+  text-align: center;
+}
+
+/* Button Hover Effect */
+.add-to-basket:hover {
+  background-color: blue; /
+  color: white;
+  transform: scale(1.05); /* Slight Scale for a Nice Effect */
+}
+
+/* Change Button Background When Hovering Over the Entire Category Box */
+.category-item:hover .add-to-basket {
+  background-color: #007bff;
+}
+
+/* Footer Section */
 .footer {
   background: #fff;
   padding: 20px;
