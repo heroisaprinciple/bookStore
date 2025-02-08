@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/authorization/sign-in.css">
+</head>
+
+<body>
+<header>
+    <div class="logo">
+        <!-- TODO: CHANGE INDEX.HTML AS AN INTRO FILE, BUT USE MAIN.HTML AS FOR MAIN PAGE -->
+        <a href="../index.html">
+            <h1 class="manrope">bookworm</h1>
+        </a>
+    </div>
+    <div class="searchbar">
+        <label>
+            <input type="text" placeholder="Search for books...">
+        </label>
+    </div>
+    <div class="basket">
+        <img src="../../img/main-page/icons/header/shopping-basket.png" alt="Basket">
+    </div>
+</header>
+<main>
+    <div class="registration-container manrope">
+        <!-- TODO: solve the problem of a disappeared img -->
+        <div class="image-section">
+        </div>
+        <div class="form-section">
+            <h2 class="cookie-regular">Register here!</h2>
+            <form action="#" method="POST">
+                <div class="input-group">
+                    <input type="text" id="firstname" required>
+                    <label for="firstname">First Name</label>
+                </div>
+                <div class="input-group">
+                    <input type="text" id="lastname" required>
+                    <label for="lastname">Last Name</label>
+                </div>
+                <div class="input-group">
+                    <input type="text" id="email" required>
+                    <label for="email">Email</label>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="password" required>
+                    <label for="password">Password</label>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="password-check" required>
+                    <label for="password">Type Password Again...</label>
+                </div>
+                <button type="submit" class="register-btn">Sign up</button>
+                <p class="signin-text cookie-regular">Do you have an account? <a href="sign-in.html">Sign iin</a></p>
+            </form>
+        </div>
+    </div>
+</main>
+</body>
+</html>

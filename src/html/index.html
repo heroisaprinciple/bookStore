@@ -5,7 +5,7 @@
     <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width" />
-      <link rel="stylesheet" href="css/main.css">
+      <link rel="stylesheet" href="../css/styles.css">
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
@@ -16,7 +16,10 @@
     <!-- Header code is here: a logo, a searchbar, a basket icon -->
       <header>
         <div class="logo">
-          <h1 class="manrope">bookworm</h1>
+          <!-- TODO: CHANGE INDEX.HTML AS AN INTRO FILE, BUT USE MAIN.HTML AS FOR MAIN PAGE -->
+          <a href="index.html">
+            <h1 class="manrope">bookworm</h1>
+          </a>
         </div>
         <div class="searchbar">
           <label>
@@ -24,7 +27,7 @@
           </label>
         </div>
         <div class="basket">
-          <img src="img/main-page/icons/header/shopping-basket.png" alt="Basket">
+          <img src="../img/main-page/icons/header/shopping-basket.png" alt="Basket">
         </div>
       </header>
 
@@ -37,7 +40,7 @@
         <a href="loyaltyCards.html">Loyalty Cards</a>
         <a href="events.html">Events</a>
         <a href="faq.html">FAQ</a>
-        <a href="my-account.html">My Account</a>
+        <a href="authorization/sign-in.html">Sign In</a>
       </div>
     </nav>
 
@@ -77,32 +80,49 @@
         <a href="categories/popular.html" class="see-more">See more</a>
 
         <div class="categories-container">
-          <div class="category-item">
-            <img src="img/main-page/books/children-book-category.jpg" alt="Kids Books">
-            <h3>Kids</h3>
-            <p>Stories that inspire the youngest minds.</p>
-            <button class="add-to-basket">Add to Basket</button>
-          </div>
+          <div class="slider-wrapper">
+            <div class="slider">
+              <div class="category-item">
+                <img src="../img/main-page/books/children-book-category.jpg" alt="Kids Books">
+                <h3>Kids</h3>
+                <p>Stories that inspire the youngest minds.</p>
+                <button class="add-to-basket">Add to Basket</button>
+              </div>
 
-          <div class="category-item">
-            <img src="img/main-page/books/teen-book-category.jpg" alt="Teens Books">
-            <h3>Teens</h3>
-            <p>Adventures and knowledge for growing readers.</p>
-            <button class="add-to-basket">Add to Basket</button>
-          </div>
+            <div class="category-item">
+              <img src="../img/main-page/books/teen-book-category.jpg" alt="Teens Books">
+              <h3>Teens</h3>
+              <p>Adventures and knowledge for growing readers.</p>
+              <button class="add-to-basket">Add to Basket</button>
+            </div>
 
-          <div class="category-item">
-            <img src="img/main-page/books/adult-book-category.jpg" alt="Adults Books">
-            <h3>Adults</h3>
-            <p>Timeless classics and modern masterpieces.</p>
-            <button class="add-to-basket">Add to Basket</button>
-          </div>
+            <div class="category-item">
+              <img src="../img/main-page/books/adult-book-category.jpg" alt="Adults Books">
+              <h3>Adults</h3>
+              <p>Timeless classics and modern masterpieces.</p>
+              <button class="add-to-basket">Add to Basket</button>
+            </div>
 
-          <div class="category-item">
-            <img src="img/main-page/books/elders-book-category.jpg" alt="Seniors Books">
-            <h3>Seniors</h3>
-            <p>Books that bring wisdom and nostalgia.</p>
-            <button class="add-to-basket">Add to Basket</button>
+            <div class="category-item">
+              <img src="../img/main-page/books/elders-book-category.jpg" alt="Seniors Books">
+              <h3>Seniors</h3>
+              <p>Books that bring wisdom and nostalgia.</p>
+              <button class="add-to-basket">Add to Basket</button>
+            </div>
+            </div>
+
+            <div class="category-item">
+              <img src="../img/main-page/books/cats-book-category.jpg" alt="Seniors Books">
+              <h3>Seniors</h3>
+              <p>Books that bring wisdom and nostalgia.</p>
+              <button class="add-to-basket">Add to Basket</button>
+            </div>
+          </div>
+            <div class="slider-nav">
+              <a href="#slide-1"></a>
+              <a href="#slide-2"></a>
+              <a href="#slide-3"></a>
+            </div>
           </div>
         </div>
       </section>
@@ -113,28 +133,28 @@
 
         <div class="categories-container">
           <div class="category-item">
-            <img src="img/main-page/books/children-book-category.jpg" alt="Kids Books">
+            <img src="../img/main-page/books/children-book-category.jpg" alt="Kids Books">
             <h3>Kids</h3>
             <p>Stories that inspire the youngest minds.</p>
             <button class="add-to-basket">Add to Basket</button>
           </div>
 
           <div class="category-item">
-            <img src="img/main-page/books/teen-book-category.jpg" alt="Teens Books">
+            <img src="../img/main-page/books/teen-book-category.jpg" alt="Teens Books">
             <h3>Teens</h3>
             <p>Adventures for adolescence.</p>
             <button class="add-to-basket">Add to Basket</button>
           </div>
 
           <div class="category-item">
-            <img src="img/main-page/books/adult-book-category.jpg" alt="Adults Books">
+            <img src="../img/main-page/books/adult-book-category.jpg" alt="Adults Books">
             <h3>Adults</h3>
             <p>Timeless classics and modern masterpieces.</p>
             <button class="add-to-basket">Add to Basket</button>
           </div>
 
           <div class="category-item">
-            <img src="img/main-page/books/elders-book-category.jpg" alt="Seniors Books">
+            <img src="../img/main-page/books/elders-book-category.jpg" alt="Seniors Books">
             <h3>Seniors</h3>
             <p>Books that bring wisdom and nostalgia.</p>
             <button class="add-to-basket">Add to Basket</button>
@@ -149,25 +169,25 @@
 
         <div class="categories-container">
           <div class="category-item">
-            <img src="img/main-page/books/children-book-category.jpg" alt="Kids Books">
+            <img src="../img/main-page/books/children-book-category.jpg" alt="Kids Books">
             <h3>Kids</h3>
             <p>Stories that inspire the youngest minds.</p>
           </div>
 
           <div class="category-item">
-            <img src="img/main-page/books/teen-book-category.jpg" alt="Teens Books">
+            <img src="../img/main-page/books/teen-book-category.jpg" alt="Teens Books">
             <h3>Teens</h3>
             <p>Adventures for adolescence.</p>
           </div>
 
           <div class="category-item">
-            <img src="img/main-page/books/adult-book-category.jpg" alt="Adults Books">
+            <img src="../img/main-page/books/adult-book-category.jpg" alt="Adults Books">
             <h3>Adults</h3>
             <p>Timeless classics and modern masterpieces.</p>
           </div>
 
           <div class="category-item">
-            <img src="img/main-page/books/elders-book-category.jpg" alt="Seniors Books">
+            <img src="../img/main-page/books/elders-book-category.jpg" alt="Seniors Books">
             <h3>Seniors</h3>
             <p>Books that bring wisdom and nostalgia.</p>
           </div>
@@ -179,11 +199,11 @@
       <div class="footer-top">
         <div class="footer-info">
           <div class="footer-item">
-            <img src="img/main-page/icons/footer/delivery.png" alt="Delivery">
+            <img src="../img/main-page/icons/footer/delivery.png" alt="Delivery">
             <p>FREE DELIVERY :)</p>
           </div>
           <div class="footer-item">
-            <img src="img/main-page/icons/footer/loyalty-card.png" alt="Loyalty Card">
+            <img src="../img/main-page/icons/footer/loyalty-card.png" alt="Loyalty Card">
             <p>LOYALTY CARD</p>
           </div>
         </div>
@@ -226,9 +246,9 @@
       </div>
 
       <div class="footer-payments">
-        <img src="img/main-page/icons/footer/cards/paypal.png" alt="PayPal">
-        <img src="img/main-page/icons/footer/cards/visa.png" alt="Visa">
-        <img src="img/main-page/icons/footer/cards/mastercard.png" alt="MasterCard">
+        <img src="../img/main-page/icons/footer/cards/paypal.png" alt="PayPal">
+        <img src="../img/main-page/icons/footer/cards/visa.png" alt="Visa">
+        <img src="../img/main-page/icons/footer/cards/mastercard.png" alt="MasterCard">
       </div>
 
       <div class="copyright">

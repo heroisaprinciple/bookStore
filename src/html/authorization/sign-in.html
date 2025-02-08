@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/authorization/sign-in.css">
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <!-- TODO: CHANGE INDEX.HTML AS AN INTRO FILE, BUT USE MAIN.HTML AS FOR MAIN PAGE -->
+        <a href="../index.html">
+          <h1 class="manrope">bookworm</h1>
+        </a>
+      </div>
+      <div class="searchbar">
+        <label>
+          <input type="text" placeholder="Search for books...">
+        </label>
+      </div>
+      <div class="basket">
+        <img src="../../img/main-page/icons/header/shopping-basket.png" alt="Basket">
+      </div>
+    </header>
+    <main>
+      <div class="login-container manrope">
+        <div class="image-section">
+        </div>
+        <div class="form-section">
+          <h2 class="cookie-regular">Welcome Back...</h2>
+          <p>Please log in to continue</p>
+          <form action="#" method="POST">
+            <div class="input-group">
+              <input type="text" id="username" required>
+              <label for="username">Username</label>
+            </div>
+            <div class="input-group">
+              <input type="password" id="password" required>
+              <label for="password">Password</label>
+            </div>
+            <button type="submit" class="login-btn">Login</button>
+            <p class="signup-text cookie-regular">Don't have an account? <a href="sign-up.html">Sign up</a></p>
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

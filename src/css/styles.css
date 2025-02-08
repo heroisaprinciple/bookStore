@@ -1,4 +1,5 @@
 /* Header is styled here: */
+/* TODO: change all font sizes to rem and use relative units */
 header {
   display: flex;
   align-items: center;
@@ -9,6 +10,16 @@ header {
   position: sticky;
   top: 0;
   z-index: 1000;
+}
+
+.logo a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+.logo a:hover {
+  opacity: 0.8; /* Slight fade effect on hover */
 }
 
 header h1 {
@@ -197,6 +208,63 @@ header h1 {
   margin-bottom: 3vh;
 }
 
+/* TODO: try adding slider -->
+/*.slider-wrapper {*/
+/*  position: relative;*/
+/*  max-width: 80vw; !* Adjust as needed *!*/
+/*  min-height: 550px; */
+/*  margin: 0 auto;*/
+/*}*/
+
+
+/*.slider {*/
+/*  display: flex;*/
+/*  aspect-ratio: 16 / 9;*/
+/*  overflow-x: auto;*/
+/*  scroll-snap-type: x mandatory;*/
+/*  scroll-behavior: smooth;*/
+/*  box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);*/
+/*  border-radius: 0.5rem;*/
+/*  -ms-overflow-style: none; !* Hide scrollbar IE and Edge *!*/
+/*  scrollbar-width: none; !* Hide scrollbar Firefox *!*/
+/*  height: 700px;*/
+/*  width: auto;*/
+/*}*/
+
+/*!* Hide scrollbar for Chrome, Safari and Opera *!*/
+/*.slider::-webkit-scrollbar {*/
+/*  display: none;*/
+/*}*/
+
+/*.slider img {*/
+/*  flex: 1 0 100%;*/
+/*  scroll-snap-align: start;*/
+/*  object-fit: cover;*/
+/*}*/
+
+/*.slider-nav {*/
+/*  display: flex;*/
+/*  column-gap: 1rem;*/
+/*  position: absolute;*/
+/*  bottom: 1.25rem;*/
+/*  left: 50%;*/
+/*  transform: translateX(-50%);*/
+/*  z-index: 1;*/
+/*}*/
+
+/*.slider-nav a {*/
+/*  width: 0.5rem;*/
+/*  height: 0.5rem;*/
+/*  border-radius: 50%;*/
+/*  background-color: #fff;*/
+/*  opacity: 0.75;*/
+/*  transition: opacity ease 250ms;*/
+/*}*/
+
+/*.slider-nav a:hover {*/
+/*  opacity: 1;*/
+/*}*/
+
 .categories-container {
   display: flex;
   justify-content: center;
@@ -216,9 +284,9 @@ header h1 {
 
 .category-item img {
   width: 100%;
-  border-radius: 0.5rem;
+  height: 400px; /* Ensure images have height */
   object-fit: cover;
-  height: 500px;
+  border-radius: 0.5rem;
 }
 
 .category-item h3 {
@@ -251,7 +319,7 @@ header h1 {
 .add-to-basket:hover {
   background-color: blue; /
   color: white;
-  transform: scale(1.05); /* Slight Scale for a Nice Effect */
+  transform: scale(1.05); /* Slight Scale Effect */
 }
 
 /* Change Button Background When Hovering Over the Entire Category Box */
