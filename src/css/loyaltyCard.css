@@ -1,0 +1,63 @@
+.rewards-program {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.section-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.rewards-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.rewards-image img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.rewards-text {
+    max-width: 500px;
+    text-align: left;
+}
+
+.rewards-text h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.rewards-text ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.rewards-text ul li {
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.join-now {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 2px solid #007BFF;
+    color: #007BFF;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.join-now:hover {
+    background-color: #007BFF;
+    color: #fff;
+}

@@ -1,0 +1,55 @@
+.faq {
+    max-width: 800px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.faq h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.faq-item {
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+    text-align: left;
+}
+
+.faq-item:last-child {
+    border-bottom: none;
+}
+
+.faq-item h3 {
+    font-size: 18px;
+    color: #333;
+    margin: 0;
+    cursor: pointer;
+}
+
+.faq-item p {
+    font-size: 16px;
+    color: #666;
+    margin: 10px 0 0 0;
+    padding-left: 10px;
+}
+
+/* Animation of text dancing, three colours used */
+.shadow-dance-text {
+    font-size: 4rem;
+    color: #fff;
+    text-shadow: 5px 5px 0 sandybrown, 10px 10px 0 saddlebrown;
+    animation: shadow-dance 2s infinite;
+}
+
+@keyframes shadow-dance {
+    0%, 100% {
+        text-shadow: 5px 5px 0 sandybrown, 10px 10px 0 saddlebrown;
+    }
+    50% {
+        text-shadow: -5px -5px 0 saddlebrown, -10px -10px 0 sandybrown;
+    }
+}
