@@ -1,0 +1,37 @@
+.terms-container {
+    max-width: 800px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.terms-container h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.terms-section {
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+}
+
+.terms-section:last-child {
+    border-bottom: none;
+}
+
+.terms-section h3 {
+    font-size: 20px;
+    color: #333;
+    margin: 0;
+}
+
+.terms-section p {
+    font-size: 16px;
+    color: #666;
+    margin: 10px 0 0 0;
+}

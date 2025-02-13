@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- TODO: change titles for every page -->
     <title>Sign In</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +16,7 @@
 <header>
     <div class="logo">
         <!-- TODO: CHANGE INDEX.HTML AS AN INTRO FILE, BUT USE MAIN.HTML AS FOR MAIN PAGE -->
-        <a href="../index.html">
+        <a href="index.html">
             <h1 class="manrope">bookworm</h1>
         </a>
     </div>
@@ -25,14 +26,29 @@
         </label>
     </div>
     <div class="basket">
-        <img src="../img/icons/header/shopping-basket.png" alt="Basket">
+        <a href="basket.html">
+            <img src="../img/icons/header/shopping-basket.png" alt="Basket">
+        </a>
     </div>
 </header>
+
+<!-- A navigation bar with book categories, popular, loyalty cards, events  -->
+<nav class="navbar manrope">
+    <div class="navbar-links">
+        <a href="categories/categories.html">Categories</a>
+        <a href="popular.html">Popular</a>
+        <a href="loyaltyCards.html">Loyalty Cards</a>
+        <a href="events.html">Events</a>
+        <a href="faq.html">FAQ</a>
+        <a href="authorization/sign-in.html">Sign In</a>
+    </div>
+</nav>
+
 <main class="noticeboard cookie-regular">
     <h2>Events at Bookworm</h2>
     <section class="card">
         <img src="../img/events/event-1.jpg" alt="Comic Book Club">
-        <span class="badge">Free Online Event</span>
+        <span class="badge">Free Onlinwe Event</span>
         <h2>Irish Language Comic Book Club for Children</h2>
         <p class="date">15 February, 2:30 pm</p>
         <div class="tags">
@@ -63,7 +79,8 @@
         <a href="#">Find out more...</a>
     </section>
 </main>
-<footer class="footer">
+
+<footer>
     <div class="footer-top">
         <div class="footer-info">
             <div class="footer-item">
@@ -78,33 +95,36 @@
     </div>
 
     <div class="footer-middle">
-        <p class="newsletter-signup">NEWSLETTER SIGN UP</p>
+        <p class="love">WE LOVE WHAT WE DO</p>
     </div>
 
     <!-- TODO: add other pages links-->
+    <!-- TODO: add open hours everywhere -->
     <div class="footer-bottom">
+        <div class="open-hours manrope">
+            <p>Open from <time>10:00</time> to <time>21:00</time> every weekday.</p>
+        </div>
         <div class="footer-links">
             <div class="footer-column">
                 <h3>SERVICES</h3>
                 <ul>
-                    <li><a href="#">Shipping & Delivery</a></li>
-                    <li><a href="#">Returns & Refunds</a></li>
+                    <li><a href="shipping-delivery.html">Shipping & Delivery</a></li>
+                    <li><a href="returns-refunds.html">Returns & Refunds</a></li>
                 </ul>
             </div>
             <div class="footer-column">
                 <h3>HELP CENTRE</h3>
                 <ul>
-                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="contact-us.html">Contact Us</a></li>
                     <li><a href="faq.html">FAQs</a></li>
-                    <li><a href="#">My Account</a></li>
+                    <li><a href="authorization/sign-in.html">My Account</a></li>
                 </ul>
             </div>
             <div class="footer-column">
                 <h3>ABOUT US</h3>
                 <ul>
-                    <li><a href="#">Loyalty Cards</a></li>
-                    <li><a href="#">Terms & Conditions</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="loyaltyCards.html">Loyalty Cards</a></li>
+                    <li><a href="terms-conditions.html">Terms & Conditions</a></li>
                 </ul>
             </div>
         </div>

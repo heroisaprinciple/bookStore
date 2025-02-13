@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
+<!-- TODO: TEST ON 3 BROWSERS: CHROME, MOZILLA, EDGE; TRY NOT TO USE PX-->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign In</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="../css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="../css/loyaltyCard.css">
+    <title>Bookworm</title>
 </head>
 <body>
+    <!-- Header code is here: a logo, a searchbar, a basket icon -->
     <header>
         <div class="logo">
-            <!-- TODO: CHANGE INDEX.HTML AS AN INTRO FILE, BUT USE MAIN.HTML AS FOR MAIN PAGE -->
             <a href="index.html">
                 <h1 class="manrope">bookworm</h1>
             </a>
@@ -43,22 +43,48 @@
         </div>
     </nav>
 
-    <main class="rewards-program manrope">
-        <h2 class="section-title">OUR REWARDS PROGRAM</h2>
-        <div class="rewards-container">
-            <div class="rewards-image">
-                <img src="../img/loyaltyCard/Card.png" alt="Loyalty Card">
+    <main>
+        <!-- TODO: add links to books -->
+        <section class="book-section manrope">
+            <h2 class="section-title">OUR BESTSELLERS</h2>
+
+            <!-- TODO: change alt names -->
+            <div class="categories-container">
+                <div class="category-item">
+                    <img src="../img/books/theCatInTheHat.jpg" alt="The Cat In The Hat">
+                    <h3>The Cat In The Hat</h3>
+                    <p>By Dr.Seuss</p>
+                    <p> €15.00 </p>
+                    <button class="add-to-basket">Add to Basket</button>
+                </div>
+
+                <div class="category-item">
+                    <img src="../img/books/theFaultInOurStars.jpg" alt="The Fault In Our Stars">
+                    <h3>The Fault In Our Stars</h3>
+                    <p>John Green</p>
+                    <p> €18.50 </p>
+                    <button class="add-to-basket">Add to Basket</button>
+                </div>
+
+                <div class="category-item">
+                    <img src="../img/books/aLittleLife.jpg" alt="A Little Life">
+                    <h3>A Little Life</h3>
+                    <p>Hanya Yanagihara</p>
+                    <p> €18.50 </p>
+                    <button class="add-to-basket">Add to Basket</button>
+                </div>
+
+                <div class="category-item">
+                    <img src="../img/books/aManCalledOve.jpg" alt="A Man Called Ove">
+                    <h3>A Man Called Ove</h3>
+                    <p>Frederik Backman</p>
+                    <p> €18.50 </p>
+                    <button class="add-to-basket">Add to Basket</button>
+                </div>
             </div>
-            <div class="rewards-text">
-                <h3>SIGN UP FOR YOUR BOOKWORM THANK YOU CARD TO RECEIVE REWARDS</h3>
-                <ul>
-                    <li>Earn 25 points for every book bought.</li>
-                    <li>Enjoy access to exclusive promotional offers.</li>
-                </ul>
-                <a href="#" class="join-now">JOIN NOW</a>
-            </div>
-        </div>
+        </section>
     </main>
+
     <footer>
         <div class="footer-top">
             <div class="footer-info">

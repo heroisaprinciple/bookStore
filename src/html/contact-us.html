@@ -9,11 +9,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/styles.css">
-  <link rel="stylesheet" href="../css/basket.css">
+  <link rel="stylesheet" href="../css/faq.css">
 </head>
 <body>
   <header>
     <div class="logo">
+      <!-- TODO: CHANGE INDEX.HTML AS AN INTRO FILE, BUT USE MAIN.HTML AS FOR MAIN PAGE -->
+      <!-- TODO: link pages on header => home and basket -->
       <a href="index.html">
         <h1 class="manrope">bookworm</h1>
       </a>
@@ -30,7 +32,7 @@
     </div>
   </header>
 
-  <!-- A navigation bar with book offers, categories, popular, loyalty cards, events  -->
+  <!-- A navigation bar with book categories, popular, loyalty cards, events  -->
   <nav class="navbar manrope">
     <div class="navbar-links">
       <a href="categories/categories.html">Categories</a>
@@ -43,56 +45,11 @@
   </nav>
 
   <main class="manrope">
-    <section class="basket-container">
-      <table class="basket-table">
-        <thead>
-        <tr>
-          <th>Item</th>
-          <th>Quantity</th>
-          <th>Item Price</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-          <td>
-            <div class="basket-item">
-              <img src="../img/books/ghostsOfRome.jpg" alt="The Ghosts Of Rome">
-              <div>
-                <p><strong>THE GHOSTS OF ROME</strong></p>
-                <p>by Joseph O'Connor</p>
-                <p class="dispatched">✔ Dispatched Today</p>
-              </div>
-            </div>
-          </td>
-          <td><input type="number" value="1" min="1"></td>
-          <td>€15.99</td>
-        </tr>
-        <tr>
-          <td>
-            <div class="basket-item">
-              <img src="../img/books/aLittleLife.jpg" alt="A Little Life">
-              <div>
-                <p><strong>A LITTLE LIFE</strong></p>
-                <p>by HANYA YANAGIHARA</p>
-                <p class="dispatched">✔ Dispatched Today</p>
-              </div>
-            </div>
-          </td>
-          <td><input type="number" value="1" min="1"></td>
-          <td>€15.99</td>
-        </tr>
-        </tbody>
-      </table>
-      <a href="#" class="remove">remove</a>
-    </section>
-    <section class="order-summary">
-      <h3>Order Summary</h3>
-      <div class="summary-details">
-        <p>Est. Delivery <span>Free</span></p>
-        <p class="total">Est. Total <span>€15.99</span></p>
-        <p>Reward points: <span>50</span></p>
+    <section class="email">
+      <div class="shadow-dance">
+        <h2 class="shadow-dance-text">Do you want to contact us?</h2>
       </div>
-      <button class="checkout">CHECKOUT</button>
+      <a href="mailto:bookworm@example.com">Please, click here</a>
     </section>
   </main>
 
@@ -114,6 +71,8 @@
       <p class="love">WE LOVE WHAT WE DO</p>
     </div>
 
+    <!-- TODO: add other pages links-->
+    <!-- TODO: add open hours everywhere -->
     <div class="footer-bottom">
       <div class="open-hours manrope">
         <p>Open from <time>10:00</time> to <time>21:00</time> every weekday.</p>
@@ -154,5 +113,5 @@
       <p>Copyright (C) 2025 @heroisaprinciple</p>
     </div>
   </footer>
-  </body>
+</body>
 </html>

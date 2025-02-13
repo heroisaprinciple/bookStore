@@ -1,0 +1,78 @@
+.shipping-container {
+    max-width: 800px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.shipping-container h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.shipping-section {
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+}
+
+.shipping-section:last-child {
+    border-bottom: none;
+}
+
+.shipping-section h3 {
+    font-size: 20px;
+    color: #333;
+    margin: 0;
+}
+
+.shipping-section p {
+    font-size: 16px;
+    color: #666;
+    margin: 10px 0 0 0;
+}
+
+.sidebar-reviews {
+    position: absolute;
+    right: 20px;
+    top: 100px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.review {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.review-content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.review-content p {
+    font-size: 14px;
+    color: #333;
+    margin: 0;
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+.review-content span {
+    font-size: 12px;
+    color: gray;
+    line-height: 1.2;
+}

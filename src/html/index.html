@@ -15,7 +15,6 @@
   <!-- Header code is here: a logo, a searchbar, a basket icon -->
     <header>
       <div class="logo">
-        <!-- TODO: CHANGE INDEX.HTML AS AN INTRO FILE, BUT USE MAIN.HTML AS FOR MAIN PAGE -->
         <a href="index.html">
           <h1 class="manrope">bookworm</h1>
         </a>
@@ -25,17 +24,19 @@
           <input type="text" placeholder="Search for books...">
         </label>
       </div>
+      <!-- TODO: ADD BASKET PAGE EVERYWHERE -->
       <div class="basket">
-        <img src="../img/icons/header/shopping-basket.png" alt="Basket">
+        <a href="basket.html">
+          <img src="../img/icons/header/shopping-basket.png" alt="Basket">
+        </a>
       </div>
     </header>
 
-  <!-- A navigation bar with book offers, categories, popular, loyalty cards, events  -->
+  <!-- A navigation bar with book categories, popular, loyalty cards, events  -->
   <nav class="navbar manrope">
     <div class="navbar-links">
       <a href="categories/categories.html">Categories</a>
-      <a href="offers.html" class="offers-section">Offers</a>
-      <a href="categories/popular.html">Popular</a>
+      <a href="popular.html">Popular</a>
       <a href="loyaltyCards.html">Loyalty Cards</a>
       <a href="events.html">Events</a>
       <a href="faq.html">FAQ</a>
@@ -77,11 +78,11 @@
     <!-- TODO: add links to books -->
     <section class="book-section manrope">
       <h2 class="section-title">OUR BESTSELLERS</h2>
-      <a href="categories/new.html" class="see-more">See more</a>
+      <a href="popular.html" class="see-more">See more</a>
 
       <div class="categories-container">
         <div class="category-item">
-          <img src="../img/books/children-book-category.jpg" alt="Kids Books">
+          <img src="../img/books/theCatInTheHat.jpg" alt="Kids Books">
           <h3>The Cat In The Hat</h3>
           <p>By Dr.Seuss</p>
           <p> €15.00 </p>
@@ -89,7 +90,7 @@
         </div>
 
         <div class="category-item">
-          <img src="../img/books/teen-book-category.jpg" alt="Teens Books">
+          <img src="../img/books/theFaultInOurStars.jpg" alt="Teens Books">
           <h3>The Fault In Our Stars</h3>
           <p>John Green</p>
           <p> €18.50 </p>
@@ -97,7 +98,7 @@
         </div>
 
         <div class="category-item">
-          <img src="../img/books/adult-book-category.jpg" alt="Adults Books">
+          <img src="../img/books/aLittleLife.jpg" alt="Adults Books">
           <h3>A Little Life</h3>
           <p>Hanya Yanagihara</p>
           <p> €18.50 </p>
@@ -105,7 +106,7 @@
         </div>
 
         <div class="category-item">
-          <img src="../img/books/elders-book-category.jpg" alt="Seniors Books">
+          <img src="../img/books/aManCalledOve.jpg" alt="Seniors Books">
           <h3>A Man Called Ove</h3>
           <p>Frederik Backman</p>
           <p> €18.50 </p>
@@ -116,11 +117,11 @@
 
     <section class="book-section manrope">
       <h2 class="section-title">NEW RELEASES</h2>
-      <a href="categories/new.html" class="see-more">See more</a>
+      <a href="new.html" class="see-more">See more</a>
 
       <div class="categories-container">
         <div class="category-item">
-          <img src="../img/books/children-book-category.jpg" alt="Kids Books">
+          <img src="../img/books/theCatInTheHat.jpg" alt="Kids Books">
           <h3>The Cat In The Hat</h3>
           <p>By Dr.Seuss</p>
           <p> €15.00 </p>
@@ -128,7 +129,7 @@
         </div>
 
         <div class="category-item">
-          <img src="../img/books/teen-book-category.jpg" alt="Teens Books">
+          <img src="../img/books/theFaultInOurStars.jpg" alt="Teens Books">
           <h3>The Fault In Our Stars</h3>
           <p>John Green</p>
           <p> €18.50 </p>
@@ -136,7 +137,7 @@
         </div>
 
         <div class="category-item">
-          <img src="../img/books/adult-book-category.jpg" alt="Adults Books">
+          <img src="../img/books/aLittleLife.jpg" alt="Adults Books">
           <h3>A Little Life</h3>
           <p>Hanya Yanagihara</p>
           <p> €18.50 </p>
@@ -144,7 +145,7 @@
         </div>
 
         <div class="category-item">
-          <img src="../img/books/elders-book-category.jpg" alt="Seniors Books">
+          <img src="../img/books/aManCalledOve.jpg" alt="Seniors Books">
           <h3>A Man Called Ove</h3>
           <p>Frederik Backman</p>
           <p> €18.50 </p>
@@ -160,25 +161,25 @@
 
       <div class="categories-container">
         <div class="category-item">
-          <img src="../img/books/children-book-category.jpg" alt="Kids Books">
+          <img src="../img/books/theCatInTheHat.jpg" alt="Kids Books">
           <h3>Kids</h3>
           <p>Stories that inspire the youngest minds.</p>
         </div>
 
         <div class="category-item">
-          <img src="../img/books/teen-book-category.jpg" alt="Teens Books">
+          <img src="../img/books/theFaultInOurStars.jpg" alt="Teens Books">
           <h3>Teens</h3>
           <p>Adventures for adolescence.</p>
         </div>
 
         <div class="category-item">
-          <img src="../img/books/adult-book-category.jpg" alt="Adults Books">
+          <img src="../img/books/aLittleLife.jpg" alt="Adults Books">
           <h3>Adults</h3>
           <p>Timeless classics and modern masterpieces.</p>
         </div>
 
         <div class="category-item">
-          <img src="../img/books/elders-book-category.jpg" alt="Seniors Books">
+          <img src="../img/books/aManCalledOve.jpg" alt="Seniors Books">
           <h3>Seniors</h3>
           <p>Books that bring wisdom and nostalgia.</p>
         </div>
@@ -201,11 +202,9 @@
     </div>
 
     <div class="footer-middle">
-      <p class="newsletter-signup">NEWSLETTER SIGN UP</p>
+      <p class="love">WE LOVE WHAT WE DO</p>
     </div>
 
-    <!-- TODO: add other pages links-->
-    <!-- TODO: add open hours everywhere -->
     <div class="footer-bottom">
       <div class="open-hours manrope">
         <p>Open from <time>10:00</time> to <time>21:00</time> every weekday.</p>
@@ -214,24 +213,23 @@
         <div class="footer-column">
           <h3>SERVICES</h3>
           <ul>
-            <li><a href="#">Shipping & Delivery</a></li>
-            <li><a href="#">Returns & Refunds</a></li>
+            <li><a href="shipping-delivery.html">Shipping & Delivery</a></li>
+            <li><a href="returns-refunds.html">Returns & Refunds</a></li>
           </ul>
         </div>
         <div class="footer-column">
           <h3>HELP CENTRE</h3>
           <ul>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
             <li><a href="faq.html">FAQs</a></li>
-            <li><a href="#">My Account</a></li>
+            <li><a href="authorization/sign-in.html">My Account</a></li>
           </ul>
         </div>
         <div class="footer-column">
           <h3>ABOUT US</h3>
           <ul>
-            <li><a href="#">Loyalty Cards</a></li>
-            <li><a href="#">Terms & Conditions</a></li>
-            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="loyaltyCards.html">Loyalty Cards</a></li>
+            <li><a href="terms-conditions.html">Terms & Conditions</a></li>
           </ul>
         </div>
       </div>
