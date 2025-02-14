@@ -2,6 +2,7 @@ main {
     background-color: #f8f8f8;
     margin: 0;
     display: flex;
+    /* Align centrally */
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -19,10 +20,13 @@ main {
 /* Profile Section */
 .personal-details {
     display: flex;
+    /* Adds even space for elements (otherwise, img will crush into the form) */
     justify-content: space-between;
+    /* Align vertically */
     align-items: center;
 }
 
+/* Form will take 70% of its container */
 .details {
     width: 70%;
 }
@@ -53,31 +57,19 @@ main {
 .avatar img {
     width: 100%;
     height: 100%;
+    /* For cat to be fit perfectly */
     object-fit: cover;
-}
-
-/* Buttons */
-.buttons {
-    margin-top: 15px;
 }
 
 button {
     border: none;
     padding: 10px 15px;
     border-radius: 5px;
+    /* Change cursor upon hover */
     cursor: pointer;
     margin-right: 10px;
 }
 
-.edit {
-    background: grey;
-    color: white;
-}
-
-.save {
-    background: forestgreen;
-    color: white;
-}
 
 .orders h3 {
     font-size: 20px;
@@ -85,13 +77,16 @@ button {
 }
 
 .orders-table {
+    /* So table would take all space of its container */
     width: 100%;
+    /* So columns would be merged (no borders) */
     border-collapse: collapse;
 }
 
 .orders-table th, .orders-table td {
     padding: 10px;
     border: 1px solid #ddd;
+    /* Align text to left side */
     text-align: left;
 }
 
@@ -110,8 +105,4 @@ button {
 
 .status-cancelled {
     color: red;
-}
-
-.loyalty-card-proof {
-    color: lightseagreen;
 }

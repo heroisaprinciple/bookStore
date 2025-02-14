@@ -3,15 +3,129 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sign In</title>
+  <title>Basket</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/styles.css">
-  <link rel="stylesheet" href="../css/basket.css">
+
+  <!-- Internal CSS styles used -->
+  <style>
+    main {
+      background-color: #f8f8f8;
+      margin: 0;
+      /* Flexbox used for alignment */
+      display: flex;
+      /* Center content horizontally */
+      justify-content: center;
+      /* Center content vertically */
+      align-items: center;
+      /* Arrange items in a column */
+      flex-direction: column;
+      padding: 20px;
+    }
+
+    .basket-container {
+      /* Set width to 80% of the page */
+      width: 80%;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      /* Add shadow */
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+
+    .basket-table {
+      /* Takes full width of container */
+      width: 100%;
+      /* Merge table borders */
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+    .basket-table th, .basket-table td {
+      padding: 10px;
+      border: 1px solid #ddd;
+      /* Align text to the left */
+      text-align: left;
+    }
+
+    .basket-table th {
+      background-color: #f0f0f0;
+      font-weight: bold;
+    }
+
+    .basket-item {
+      display: flex;
+      align-items: center;
+    }
+
+    .basket-item img {
+      width: 60px;
+      height: 90px;
+      /* Space between image and text */
+      margin-right: 10px;
+    }
+
+    /* Dispatched status */
+    .dispatched {
+      color: green;
+      font-weight: bold;
+    }
+
+    /* Remove option */
+    .remove {
+      color: red;
+      /* Remove underline */
+      text-decoration: none;
+      /* Make the link a block element */
+      display: block;
+      margin-top: 10px;
+    }
+
+    .order-summary {
+      width: 300px;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .summary-details p {
+      display: flex;
+      /* Space between text and price */
+      justify-content: space-between;
+      padding: 5px 0;
+    }
+
+    /* Total price block */
+    .total {
+      font-weight: bold;
+      color: #e74c3c;
+    }
+
+    /* Button */
+    .checkout {
+      width: 100%;
+      background: #3498db;
+      color: white;
+      border: none;
+      padding: 15px;
+      /* Change cursor to pointer on hover */
+      cursor: pointer;
+      font-size: 16px;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+
+  </style>
 </head>
+
 <body>
+  <!-- Header code is here: a logo, a searchbar, a basket icon -->
+  <!-- I used semantic tags here as they provide a clear structure and a better understanding -->
   <header>
     <div class="logo">
       <a href="index.html">
@@ -33,7 +147,15 @@
   <!-- A navigation bar with book offers, categories, popular, loyalty cards, events  -->
   <nav class="navbar manrope">
     <div class="navbar-links">
-      <a href="categories/categories.html">Categories</a>
+      <!-- A drop down menu is provided: hover on categories -->
+      <div class="dropdown">
+        <a href="categories/categories.html" class="dropbtn">Categories</a>
+        <div class="dropdown-content">
+          <a href="categories/crime-mystery.html">Mystery</a>
+          <a href="categories/romance.html">Romance</a>
+          <a href="categories/comedy.html">Comedy</a>
+        </div>
+      </div>
       <a href="popular.html">Popular</a>
       <a href="loyaltyCards.html">Loyalty Cards</a>
       <a href="events.html">Events</a>
@@ -44,6 +166,7 @@
 
   <main class="manrope">
     <section class="basket-container">
+      <!-- A table of item, quantity and price info -->
       <table class="basket-table">
         <thead>
         <tr>
@@ -53,6 +176,7 @@
         </tr>
         </thead>
         <tbody>
+        <!-- Book 1 -->
         <tr>
           <td>
             <div class="basket-item">
@@ -67,6 +191,8 @@
           <td><input type="number" value="1" min="1"></td>
           <td>€15.99</td>
         </tr>
+
+        <!-- BOOK 2 -->
         <tr>
           <td>
             <div class="basket-item">
@@ -85,6 +211,8 @@
       </table>
       <a href="#" class="remove">remove</a>
     </section>
+
+    <!-- Summary -->
     <section class="order-summary">
       <h3>Order Summary</h3>
       <div class="summary-details">
@@ -96,6 +224,7 @@
     </section>
   </main>
 
+  <!-- A footer is made here, divided in footer-top, footer-middle and footer-botto. -->
   <footer>
     <div class="footer-top">
       <div class="footer-info">
@@ -110,10 +239,12 @@
       </div>
     </div>
 
+    <!-- Inline CSS -->
     <div class="footer-middle">
-      <p class="love">WE LOVE WHAT WE DO</p>
+      <p style="font-size: 18px; font-weight: bold; color: #555">WE LOVE WHAT WE DO</p>
     </div>
 
+    <!-- Footer bottom consists of link to our services, help center and etc -->
     <div class="footer-bottom">
       <div class="open-hours manrope">
         <p>Open from <time>10:00</time> to <time>21:00</time> every weekday.</p>
@@ -144,12 +275,14 @@
       </div>
     </div>
 
+    <!-- Payment Methods -->
     <div class="footer-payments">
       <img src="../img/icons/footer/cards/paypal.png" alt="PayPal">
       <img src="../img/icons/footer/cards/visa.png" alt="Visa">
       <img src="../img/icons/footer/cards/mastercard.png" alt="MasterCard">
     </div>
 
+    <!-- Copyright Notice -->
     <div class="copyright">
       <p>Copyright (C) 2025 @heroisaprinciple</p>
     </div>

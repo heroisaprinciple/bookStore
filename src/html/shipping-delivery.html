@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign In</title>
+    <title>Shipping and Delivery</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="../css/shipping-delivery.css">
 </head>
 <body>
+    <!-- Header code is here: a logo, a searchbar, a basket icon -->
+    <!-- I used semantic tags here as they provide a clear structure and a better understanding -->
     <header>
         <div class="logo">
             <a href="index.html">
@@ -33,7 +35,15 @@
     <!-- A navigation bar with book categories, popular, loyalty cards, events  -->
     <nav class="navbar manrope">
         <div class="navbar-links">
-            <a href="categories/categories.html">Categories</a>
+            <!-- A drop down menu is provided: hover on categories -->
+            <div class="dropdown">
+                <a href="categories/categories.html" class="dropbtn">Categories</a>
+                <div class="dropdown-content">
+                    <a href="categories/crime-mystery.html">Mystery</a>
+                    <a href="categories/romance.html">Romance</a>
+                    <a href="categories/comedy.html">Comedy</a>
+                </div>
+            </div>
             <a href="popular.html">Popular</a>
             <a href="loyaltyCards.html">Loyalty Cards</a>
             <a href="events.html">Events</a>
@@ -42,9 +52,12 @@
         </div>
     </nav>
 
+    <!-- sections with popular questions -->
     <main class="shipping-container manrope">
         <h2>Shipping & Delivery</h2>
+        <!-- It was decided to use article tag to reference each post entry -->
         <article class="shipping-section">
+            <!-- It is important to use headings with article tags -->
             <h3 class="cookie-regular">1. Free Shipping</h3>
             <p>We offer free standard shipping on all orders, regardless of order value.</p>
         </article>
@@ -65,8 +78,12 @@
             <p>If your package has not arrived within the estimated delivery time, please contact <a href="mailto:bookworm@example.com"> our support team for assistance. </a></p>
         </article>
     </main>
+
+    <!-- A little right side sections with reviews -->
+    <!-- Aside is used to encapsulate information, which does not belong to main or other sections -->
     <aside class="manrope">
         <div class="sidebar-reviews">
+            <!-- A review box -->
             <div class="review">
                 <div class="review-content">
                     <p>“They deliver fast!”</p>
@@ -81,6 +98,8 @@
             </div>
         </div>
     </aside>
+
+    <!-- A footer is made here, divided in footer-top, footer-middle and footer-botto. -->
     <footer>
         <div class="footer-top">
             <div class="footer-info">
@@ -95,12 +114,12 @@
             </div>
         </div>
 
+        <!-- Inline CSS -->
         <div class="footer-middle">
-            <p class="love">WE LOVE WHAT WE DO</p>
+            <p style="font-size: 18px; font-weight: bold; color: #555">WE LOVE WHAT WE DO</p>
         </div>
 
-        <!-- TODO: add other pages links-->
-        <!-- TODO: add open hours everywhere -->
+        <!-- Footer bottom consists of link to our services, help center and etc -->
         <div class="footer-bottom">
             <div class="open-hours manrope">
                 <p>Open from <time>10:00</time> to <time>21:00</time> every weekday.</p>
@@ -131,12 +150,14 @@
             </div>
         </div>
 
+        <!-- Payment Methods -->
         <div class="footer-payments">
             <img src="../img/icons/footer/cards/paypal.png" alt="PayPal">
             <img src="../img/icons/footer/cards/visa.png" alt="Visa">
             <img src="../img/icons/footer/cards/mastercard.png" alt="MasterCard">
         </div>
 
+        <!-- Copyright Notice -->
         <div class="copyright">
             <p>Copyright (C) 2025 @heroisaprinciple</p>
         </div>

@@ -1,9 +1,11 @@
 .terms-container {
+    /* Limits width to make it look like a card */
     max-width: 800px;
     margin: 20px auto;
     background: white;
     padding: 20px;
     border-radius: 10px;
+    /* Adds a shadow effect */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     text-align: left;
 }
@@ -16,11 +18,13 @@
 }
 
 .terms-section {
+    /* Adds a divider between questions */
     border-bottom: 1px solid #ddd;
     padding: 15px 0;
 }
 
 .terms-section:last-child {
+    /* Removes the bottom border from the last section to maintain clean layout */
     border-bottom: none;
 }
 

@@ -1,7 +1,7 @@
 .faq {
+    /* Limits width to make it look like a card */
     max-width: 800px;
     margin: 20px auto;
-    background: white;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -14,6 +14,7 @@
 }
 
 .faq-item {
+    /* Adds a divider between questions */
     border-bottom: 1px solid #ddd;
     padding: 15px 0;
     text-align: left;
@@ -27,6 +28,7 @@
     font-size: 18px;
     color: #333;
     margin: 0;
+    /* Change cursor upon hovering */
     cursor: pointer;
 }
 
@@ -42,14 +44,17 @@
     font-size: 4rem;
     color: #fff;
     text-shadow: 5px 5px 0 sandybrown, 10px 10px 0 saddlebrown;
+    /* Infinite effect that happens for 2 sec */
     animation: shadow-dance 2s infinite;
 }
 
 @keyframes shadow-dance {
     0%, 100% {
+        /* Shadows positioned in bottom-right */
         text-shadow: 5px 5px 0 sandybrown, 10px 10px 0 saddlebrown;
     }
     50% {
+        /* Shadows shift to the opposite direction => thus, changing colour */
         text-shadow: -5px -5px 0 saddlebrown, -10px -10px 0 sandybrown;
     }
 }

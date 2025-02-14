@@ -1,17 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Cookie&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 main {
     display: flex;
+    /* Align centrally */
     justify-content: center;
     align-items: center;
+    /* Setting a min height for container, without it it will crash to navbar */
     min-height: 100vh;
-    background-color: white;
 }
 
 /* Login Container */
@@ -26,27 +19,25 @@ main {
 
 /* Left Side (Image Section) */
 .image-section {
+    /* Allow img to take space, without it form will take all space of container */
     flex: 1;
     background: url("../../img/authorization/sign-in-background.jpg") no-repeat center center;
+    /* Img will take size of its container */
     background-size: cover;
 }
 
 /* Right Side (Form Section) */
 .form-section {
+    /* Without flex:1, picture will take all space of container :) */
     flex: 1;
-    background: white;
     display: flex;
     flex-direction: column;
+    /* Center horizontally */
     justify-content: center;
+    /* Center vertically */
     align-items: center;
     padding: 2rem;
     text-align: center;
-}
-
-/* Form Styling */
-h2 {
-    margin-bottom: 10px;
-    font-size: 1.8rem;
 }
 
 p {
@@ -56,37 +47,50 @@ p {
 }
 
 .input-group {
+    /* Here, label will be positioned inside the input */
     position: relative;
     width: 100%;
+    /* Adds spacing below each input field */
     margin-bottom: 20px;
 }
 
 .input-group input {
+    /* input fills the entire available space */
     width: 100%;
     padding: 10px;
     font-size: 16px;
     border: 2px solid #ddd;
     border-radius: 5px;
+    /* Removes default browser outline */
     outline: none;
+    /* Smooth transition to change colour */
     transition: 0.3s;
 }
 
 .input-group label {
+    /* Username and Password will be inside inputs */
     position: absolute;
+    /* Switch to left */
     left: 10px;
+    /* Switches to top */
     top: 50%;
+    /* Tells the label to remain centered */
     transform: translateY(-50%);
     font-size: 14px;
     color: gray;
+    /* Prevents the label from being clicked */
     pointer-events: none;
+    /* Smooth transition again */
     transition: 0.3s;
 }
 
+/* Changes border color when the input is focused or has valid input */
 .input-group input:focus,
 .input-group input:valid {
     border-color: saddlebrown;
 }
 
+/* Moves the label upwards when the input is focused or contains text */
 .input-group input:focus + label,
 .input-group input:valid + label {
     top: 10px;
@@ -96,6 +100,7 @@ p {
 
 /* Login Button */
 .login-btn {
+    /* Makes the button span the full width of its container */
     width: 100%;
     padding: 10px;
     border: none;
@@ -103,10 +108,12 @@ p {
     color: white;
     font-size: 16px;
     border-radius: 5px;
+    /* Changes pointer upon hover */
     cursor: pointer;
     transition: 0.3s;
 }
 
+/* Changes colour on hover */
 .login-btn:hover {
     background: sandybrown;
 }
@@ -123,6 +130,7 @@ p {
     font-weight: 600;
 }
 
+/* Adds underline upon hover */
 .signup-text a:hover {
     text-decoration: underline;
 }

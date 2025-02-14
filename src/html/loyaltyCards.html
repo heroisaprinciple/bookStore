@@ -3,18 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign In</title>
+    <title>Loyalty Cards</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="../css/loyaltyCard.css">
+
+    <!-- Internal CSS is used -->
+    <style>
+        .rewards-program {
+            /* Centers all content within the section */
+            text-align: center;
+            /* Adds spacing in the section */
+            padding: 40px 20px;
+        }
+
+        .section-title {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        /* Rewards container made with flexbox */
+        .rewards-container {
+            display: flex;
+            /* Centers items vertically */
+            align-items: center;
+            /* Centers items horizontally */
+            justify-content: center;
+            /* Adds spacing between image and text */
+            gap: 30px;
+        }
+
+        .rewards-image img {
+            /* Prevents the image from growing larger than 350px */
+            max-width: 350px;
+            /* Adds a subtle shadow effect */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .rewards-text {
+            /*  Limits text width for better readability */
+            max-width: 500px;
+            /* Aligns text to the left */
+            text-align: left;
+        }
+
+        .rewards-text h3 {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .rewards-text ul {
+            /* Removes default bullet points */
+            list-style: none;
+            /* Removes padding for prettier layout*/
+            padding: 0;
+            margin-bottom: 20px;
+        }
+
+        .rewards-text ul li {
+            /* Adds spacing between list items */
+            margin-bottom: 5px;
+            font-size: 16px;
+        }
+
+        .join-now {
+            /* Stays inline with other elements, but allows us to set width, height, padding,
+            and margins like a block element */
+            display: inline-block;
+            /* Adds padding for a clickable button */
+            padding: 10px 20px;
+            background-color: transparent;
+            /* A cool blue border */
+            border: 2px solid #007BFF;
+            color: #007BFF;
+            font-size: 16px;
+            /* Removes underline from the link */
+            text-decoration: none;
+            border-radius: 5px;
+            /* Smooth transition effect upon hover */
+            transition: all 0.3s ease-in-out;
+        }
+
+        /* A hover animation */
+        .join-now:hover {
+            background-color: #007BFF;
+            color: #fff;
+        }
+    </style>
 </head>
 <body>
+    <!-- Header code is here: a logo, a searchbar, a basket icon -->
+    <!-- I used semantic tags here as they provide a clear structure and a better understanding -->
     <header>
         <div class="logo">
-            <!-- TODO: CHANGE INDEX.HTML AS AN INTRO FILE, BUT USE MAIN.HTML AS FOR MAIN PAGE -->
             <a href="index.html">
                 <h1 class="manrope">bookworm</h1>
             </a>
@@ -34,7 +119,15 @@
     <!-- A navigation bar with book categories, popular, loyalty cards, events  -->
     <nav class="navbar manrope">
         <div class="navbar-links">
-            <a href="categories/categories.html">Categories</a>
+            <!-- A drop down menu is provided: hover on categories -->
+            <div class="dropdown">
+                <a href="categories/categories.html" class="dropbtn">Categories</a>
+                <div class="dropdown-content">
+                    <a href="categories/crime-mystery.html">Mystery</a>
+                    <a href="categories/romance.html">Romance</a>
+                    <a href="categories/comedy.html">Comedy</a>
+                </div>
+            </div>
             <a href="popular.html">Popular</a>
             <a href="loyaltyCards.html">Loyalty Cards</a>
             <a href="events.html">Events</a>
@@ -43,10 +136,13 @@
         </div>
     </nav>
 
+    <!-- Main section -->
     <main class="rewards-program manrope">
         <h2 class="section-title">OUR REWARDS PROGRAM</h2>
+        <!-- Rewards container -->
         <div class="rewards-container">
             <div class="rewards-image">
+                <!-- A pic of loyalty card -->
                 <img src="../img/loyaltyCard/Card.png" alt="Loyalty Card">
             </div>
             <div class="rewards-text">
@@ -55,10 +151,13 @@
                     <li>Earn 25 points for every book bought.</li>
                     <li>Enjoy access to exclusive promotional offers.</li>
                 </ul>
-                <a href="#" class="join-now">JOIN NOW</a>
+                <!-- Join now link -->
+                <a href="authorization/sign-up.html" class="join-now">JOIN NOW</a>
             </div>
         </div>
     </main>
+
+    <!-- A footer is made here, divided in footer-top, footer-middle and footer-botto. -->
     <footer>
         <div class="footer-top">
             <div class="footer-info">
@@ -73,12 +172,12 @@
             </div>
         </div>
 
+        <!-- Inline CSS -->
         <div class="footer-middle">
-            <p class="love">WE LOVE WHAT WE DO</p>
+            <p style="font-size: 18px; font-weight: bold; color: #555">WE LOVE WHAT WE DO</p>
         </div>
 
-        <!-- TODO: add other pages links-->
-        <!-- TODO: add open hours everywhere -->
+        <!-- Footer bottom consists of link to our services, help center and etc -->
         <div class="footer-bottom">
             <div class="open-hours manrope">
                 <p>Open from <time>10:00</time> to <time>21:00</time> every weekday.</p>
@@ -109,12 +208,14 @@
             </div>
         </div>
 
+        <!-- Payment Methods -->
         <div class="footer-payments">
             <img src="../img/icons/footer/cards/paypal.png" alt="PayPal">
             <img src="../img/icons/footer/cards/visa.png" alt="Visa">
             <img src="../img/icons/footer/cards/mastercard.png" alt="MasterCard">
         </div>
 
+        <!-- Copyright Notice -->
         <div class="copyright">
             <p>Copyright (C) 2025 @heroisaprinciple</p>
         </div>

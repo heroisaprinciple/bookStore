@@ -13,6 +13,8 @@
   </head>
 
   <body>
+  <!-- Header code is here: a logo, a searchbar, a basket icon -->
+  <!-- I used semantic tags here as they provide a clear structure and a better understanding -->
     <header>
       <div class="logo">
         <a href="../index.html">
@@ -30,12 +32,37 @@
         </a>
       </div>
     </header>
+
+  <!-- A navigation bar with book categories, popular, loyalty cards, events  -->
+    <nav class="navbar manrope">
+      <div class="navbar-links">
+        <!-- A drop down menu is provided: hover on categories -->
+        <div class="dropdown">
+          <a href="../categories/categories.html" class="dropbtn">Categories</a>
+          <div class="dropdown-content">
+            <a href="../categories/crime-mystery.html">Mystery</a>
+            <a href="../categories/romance.html">Romance</a>
+            <a href="../categories/comedy.html">Comedy</a>
+          </div>
+        </div>
+        <a href="../popular.html">Popular</a>
+        <a href="../loyaltyCards.html">Loyalty Cards</a>
+        <a href="../events.html">Events</a>
+        <a href="../faq.html">FAQ</a>
+      </div>
+    </nav>
+
+  <!-- Main Content: Sign In Form -->
     <main>
       <div class="login-container manrope">
+        <!-- Image on the left side -->
         <div class="image-section">
         </div>
+
+        <!-- Log in form -->
         <div class="form-section">
-          <h2 class="cookie-regular">Welcome Back...</h2>
+          <!-- Inline CSS -->
+          <h2 class="cookie-regular" style="margin-bottom: 10px; font-size: 1.8rem">Welcome Back...</h2>
           <p>Please log in to continue</p>
           <form action="../account/account.html" method="POST">
             <div class="input-group">
@@ -47,11 +74,15 @@
               <label for="password">Password</label>
             </div>
             <button type="submit" class="login-btn">Login</button>
+
+            <!-- If no account, sign up -->
             <p class="signup-text cookie-regular">Don't have an account? <a href="sign-up.html">Sign up</a></p>
           </form>
         </div>
       </div>
     </main>
+
+  <!-- A footer is made here, divided in footer-top, footer-middle and footer-botto. -->
     <footer class="footer">
       <div class="footer-top">
         <div class="footer-info">
@@ -66,10 +97,12 @@
         </div>
       </div>
 
+      <!-- Inline CSS -->
       <div class="footer-middle">
-        <p class="love">WE LOVE WHAT WE DO</p>
+        <p style="font-size: 18px; font-weight: bold; color: #555">WE LOVE WHAT WE DO</p>
       </div>
 
+      <!-- Footer bottom consists of link to our services, help center and etc -->
       <div class="footer-bottom">
         <div class="open-hours manrope">
           <p>Open from <time>10:00</time> to <time>21:00</time> every weekday.</p>
@@ -100,12 +133,14 @@
         </div>
       </div>
 
+      <!-- Payment Methods -->
       <div class="footer-payments">
         <img src="../../img/icons/footer/cards/paypal.png" alt="PayPal">
         <img src="../../img/icons/footer/cards/visa.png" alt="Visa">
         <img src="../../img/icons/footer/cards/mastercard.png" alt="MasterCard">
       </div>
 
+      <!-- Copyright Notice -->
       <div class="copyright">
         <p>Copyright (C) 2025 @heroisaprinciple</p>
       </div>

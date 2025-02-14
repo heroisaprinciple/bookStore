@@ -1,7 +1,7 @@
 .shipping-container {
+    /* Limits width to make it look like a card */
     max-width: 800px;
     margin: 20px auto;
-    background: white;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -16,10 +16,12 @@
 }
 
 .shipping-section {
+    /* Adds a divider between questions */
     border-bottom: 1px solid #ddd;
     padding: 15px 0;
 }
 
+/* Removes bottom border from the last section for a clean layout */
 .shipping-section:last-child {
     border-bottom: none;
 }
@@ -36,30 +38,33 @@
     margin: 10px 0 0 0;
 }
 
+/* Reviews sidebar */
 .sidebar-reviews {
+    /* Makes reviews stay on the right side and not fall down */
     position: absolute;
     right: 20px;
+    /* Attaches to top ! */
     top: 100px;
     width: 250px;
     display: flex;
+    /* Does column-like layout */
     flex-direction: column;
+    /* Gap between reviews */
     gap: 20px;
 }
 
 .review {
-    background: white;
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    text-align: left;
     display: flex;
     flex-direction: column;
-    gap: 10px;
 }
 
 .review-content {
     display: flex;
     flex-direction: column;
+    /* Gap between content */
     gap: 5px;
 }
 
@@ -68,6 +73,7 @@
     color: #333;
     margin: 0;
     font-weight: bold;
+    /* Sets a line height for a paragraph to look better */
     line-height: 1.4;
 }
 

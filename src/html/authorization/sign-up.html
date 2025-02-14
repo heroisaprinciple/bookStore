@@ -12,6 +12,9 @@
         <link rel="stylesheet" href="../../css/authorization/sign-up.css">
     </head>
     <body>
+
+    <!-- Header code is here: a logo, a searchbar, a basket icon -->
+    <!-- I used semantic tags here as they provide a clear structure and a better understanding -->
         <header>
             <div class="logo">
                 <a href="../index.html">
@@ -24,13 +27,39 @@
                 </label>
             </div>
             <div class="basket">
-                <img src="../../img/icons/header/shopping-basket.png" alt="Basket">
+                <a href="../basket.html">
+                    <img src="../../img/icons/header/shopping-basket.png" alt="Basket">
+                </a>
             </div>
         </header>
+
+    <!-- A navigation bar with book categories, popular, loyalty cards, events  -->
+        <nav class="navbar manrope">
+            <div class="navbar-links">
+                <!-- A drop down menu is provided: hover on categories -->
+                <div class="dropdown">
+                    <a href="../categories/categories.html" class="dropbtn">Categories</a>
+                    <div class="dropdown-content">
+                        <a href="../categories/crime-mystery.html">Mystery</a>
+                        <a href="../categories/romance.html">Romance</a>
+                        <a href="../categories/comedy.html">Comedy</a>
+                    </div>
+                </div>
+                <a href="../popular.html">Popular</a>
+                <a href="../loyaltyCards.html">Loyalty Cards</a>
+                <a href="../events.html">Events</a>
+                <a href="../faq.html">FAQ</a>
+            </div>
+        </nav>
+
+    <!-- Main Content: Registration Form -->
         <main>
             <div class="registration-container manrope">
+                <!-- Image on the left -->
                 <div class="image-section">
                 </div>
+
+                <!-- Sign Up form on the right side -->
                 <div class="form-section">
                     <h2 class="cookie-regular">Register here!</h2>
                     <form action="../account/account.html" method="POST">
@@ -55,11 +84,15 @@
                             <label for="password">Type Password Again...</label>
                         </div>
                         <button type="submit" class="register-btn">Sign up</button>
+
+                        <!-- Link to Sign-In Page -->
                         <p class="signin-text cookie-regular">Do you have an account? <a href="sign-in.html">Sign iin</a></p>
                     </form>
                 </div>
             </div>
         </main>
+
+    <!-- A footer is made here, divided in footer-top, footer-middle and footer-botto. -->
         <footer class="footer">
             <div class="footer-top">
                 <div class="footer-info">
@@ -74,14 +107,16 @@
                 </div>
             </div>
             <div class="footer-middle">
-                <p class="love">WE LOVE WHAT WE DO</p>
+                <p style="font-size: 18px; font-weight: bold; color: #555">WE LOVE WHAT WE DO</p>
             </div>
 
+            <!-- Footer bottom consists of link to our services, help center and etc -->
             <div class="footer-bottom">
                 <div class="open-hours manrope">
                     <p>Open from <time>10:00</time> to <time>21:00</time> every weekday.</p>
                 </div>
                 <div class="footer-links">
+                    <!-- Every column has specific information -->
                     <div class="footer-column">
                         <h3>SERVICES</h3>
                         <ul>
@@ -107,12 +142,14 @@
                 </div>
             </div>
 
+            <!-- Payment Methods -->
             <div class="footer-payments">
                 <img src="../../img/icons/footer/cards/paypal.png" alt="PayPal">
                 <img src="../../img/icons/footer/cards/visa.png" alt="Visa">
                 <img src="../../img/icons/footer/cards/mastercard.png" alt="MasterCard">
             </div>
 
+            <!-- Copyright Notice -->
             <div class="copyright">
                 <p>Copyright (C) 2025 @heroisaprinciple</p>
             </div>

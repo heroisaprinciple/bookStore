@@ -8,10 +8,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
-    <title>Bookworm</title>
+    <title>Comedy</title>
 </head>
 <body>
     <!-- Header code is here: a logo, a searchbar, a basket icon -->
+    <!-- I used semantic tags here as they provide a clear structure and a better understanding -->
     <header>
         <div class="logo">
             <a href="../index.html">
@@ -30,9 +31,18 @@
         </div>
     </header>
 
+    <!-- A navigation bar with book categories, popular, loyalty cards, events  -->
     <nav class="navbar manrope">
         <div class="navbar-links">
-            <a href="../categories/categories.html">Categories</a>
+            <!-- A drop down menu is provided: hover on categories -->
+            <div class="dropdown">
+                <a href="../categories/categories.html" class="dropbtn">Categories</a>
+                <div class="dropdown-content">
+                    <a href="../categories/crime-mystery.html">Mystery</a>
+                    <a href="../categories/romance.html">Romance</a>
+                    <a href="../categories/comedy.html">Comedy</a>
+                </div>
+            </div>
             <a href="../popular.html">Popular</a>
             <a href="../loyaltyCards.html">Loyalty Cards</a>
             <a href="../events.html">Events</a>
@@ -41,6 +51,7 @@
         </div>
     </nav>
 
+    <!-- Main section -> comedy books -->
     <main>
         <section class="book-section manrope">
             <h2 class="section-title">Comedy</h2>
@@ -81,6 +92,7 @@
         </section>
     </main>
 
+    <!-- A footer is made here, divided in footer-top, footer-middle and footer-botto. -->
     <footer>
         <div class="footer-top">
             <div class="footer-info">
@@ -95,9 +107,10 @@
             </div>
         </div>
         <div class="footer-middle">
-            <p class="love">WE LOVE WHAT WE DO</p>
+            <p style="font-size: 18px; font-weight: bold; color: #555">WE LOVE WHAT WE DO</p>
         </div>
 
+        <!-- Footer bottom consists of link to our services, help center and etc -->
         <div class="footer-bottom">
             <div class="open-hours manrope">
                 <p>Open from <time>10:00</time> to <time>21:00</time> every weekday.</p>
@@ -127,12 +140,14 @@
                 </div>
             </div>
 
+            <!-- Payment Methods -->
             <div class="footer-payments">
                 <img src="../../img/icons/footer/cards/paypal.png" alt="PayPal">
                 <img src="../../img/icons/footer/cards/visa.png" alt="Visa">
                 <img src="../../img/icons/footer/cards/mastercard.png" alt="MasterCard">
             </div>
 
+            <!-- Copyright Notice -->
             <div class="copyright">
                 <p>Copyright (C) 2025 @heroisaprinciple</p>
             </div>
