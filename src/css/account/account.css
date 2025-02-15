@@ -1,6 +1,7 @@
 main {
     background-color: #f8f8f8;
-    margin: 0;
+    margin: 20px 30px;
+    padding: 40px;
     display: flex;
     /* Align centrally */
     justify-content: center;
